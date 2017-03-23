@@ -2,10 +2,10 @@ from biblioteka import zrob_parzysta
 __author__ = "Grzegorz Holak"
 
 
-def dzielenie(x, y):
-    if y % 2 == 0:
-        if y == 0:
-            return x
-        return x / y
-    else:
-        return x / zrob_parzysta(y)
+def dzielenie(dzielna, dzielnik):
+    if not dzielnik % 2 == 0:
+        dzielnik = zrob_parzysta(dzielnik)
+    elif dzielnik == 0:
+        return dzielna
+    return dzielna / dzielnik
+
