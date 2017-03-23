@@ -1,4 +1,5 @@
 import unittest
+import modul
 
 
 class TestyModul(unittest.TestCase):
