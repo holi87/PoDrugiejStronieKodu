@@ -9,5 +9,8 @@ class TestyModul(unittest.TestCase):
     def test_czy_dzielenie_12_przez_4_da_3(self):
         self.assertEqual(3, modul.dzielenie(12, 4))
 
+    def test_czy_dzielenie_12_przez_3_da_3(self):
+        self.assertEqual(3, modul.dzielenie(12, 3))
+
 if __name__ == '__main__':
     unittest.main()
